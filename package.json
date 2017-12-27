@@ -1,0 +1,24 @@
+{
+  "name": "faster-verify",
+  "version": "0.0.0",
+  "description": "Faster verify",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-gyp rebuild",
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WMXPY/faster-verify.git"
+  },
+  "author": "WMXPY",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/WMXPY/faster-verify/issues"
+  },
+  "homepage": "https://github.com/WMXPY/faster-verify#readme",
+  "dependencies": {
+    "nan": "^2.8.0"
+  }
+}
