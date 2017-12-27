@@ -5,7 +5,7 @@
                 "<!(node -e \"require('nan')\")"
             ],
             "target_name": "addon",
-            "sources": ["src/main.cpp"]
+            "sources": ["src/main.cc"]
         }
     ]
 }
