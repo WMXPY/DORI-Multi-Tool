@@ -2,7 +2,7 @@
 
 > In Development
 
-:white_check_mark: A faster type check lib for NodeJS
+:white_check_mark: A sample type check package for NodeJS, fast, native
 
 ## Basic usage
 
