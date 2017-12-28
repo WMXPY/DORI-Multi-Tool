@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.vue": "html",
+        "system_error": "cpp"
+    }
+}

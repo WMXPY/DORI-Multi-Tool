@@ -1,6 +1,6 @@
 {
   "name": "faster-verify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Faster verify",
   "main": "index.js",
   "scripts": {
