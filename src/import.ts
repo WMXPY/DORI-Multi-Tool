@@ -1,6 +1,6 @@
 declare const require: any;
 
-const nodeComponent = require("../build/Release/addon.node");
+const nodeComponent = require("../build/Release/fv.node");
 
 export default nodeComponent;
 export const Hello = nodeComponent.Hello;

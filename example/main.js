@@ -1,7 +1,7 @@
 const {
     Hello,
     IsPrime
-} = require("../build/Release/addon.node"); // native c++
+} = require("../build/Release/fv.node"); // native c++
 const isPrime = require('./isPrime.js'); // js
 
 console.log(Hello());
