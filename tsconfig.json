@@ -1,0 +1,28 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "sourceMap": false,
+        "outDir": "./dist",
+        "strict": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false
+    },
+    "types": [
+        "node"
+    ],
+    "paths": {
+        "src/*": [
+            "src/*"
+        ]
+    },
+    "typeRoots": [
+        "node_modules/@types"
+    ],
+    "include": [
+        "./src/**/*"
+    ]
+}
