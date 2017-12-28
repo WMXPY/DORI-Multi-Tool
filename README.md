@@ -6,10 +6,28 @@
 
 ## Basic usage
 
+### Test compile
+
 ```js
+
+import {Hello} from 'faster-verify';
+
+console.log(Hello());
+// Hello from C++!
+
+```
+
+### Verifys
+
+```js
+
 import a, {isArray, isPrime, isNumber, isString, isFunction, isObject} from 'faster-verify';
 
-console.log(is***(***))
+console.log(is***(***));
+// true/false
+console.log(a.IsArray(***), a.Is***(***)); // Important: capital I
+// true/false
+
 ```
 
 ## Performance
