@@ -25,7 +25,7 @@ NAN_METHOD(IsPrime)
 
     int number = (int)info[0]->NumberValue();
 
-    if (number <= 2)
+    if (number < 2)
     {
         info.GetReturnValue().Set(Nan::False());
         return;
@@ -33,7 +33,7 @@ NAN_METHOD(IsPrime)
     else
     {
         int i;
-        for (i = 3; i < number; i++)
+        for (i = 2; i < number; i++)
         {
             if (number % i == 0)
             {
