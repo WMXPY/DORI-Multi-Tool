@@ -1,8 +1,32 @@
 # faster-verify
 
-> In Development
+> Now 10% test covered
 
 :white_check_mark: A sample type check package for NodeJS, fast, native
+
+## Install
+
+```bash
+
+npm install faster-verify --save
+# Or
+npm install faster-verify --save-dev
+
+```
+
+Normally, compile will be complete shortly.
+
+If error occurs, you can run it again by your self.
+
+```bash
+
+# Goto the folder
+cd node_modules/faster-verify
+make compile
+# Or
+npm run compile
+
+```
 
 ## Basic usage
 
@@ -25,7 +49,7 @@ import a, {isArray, isPrime, isNumber, isString, isFunction, isObject} from 'fas
 
 console.log(is***(***));
 // true/false
-console.log(a.IsArray(***), a.Is***(***)); // Important: capital I
+console.log(a.IsArray(***), a.Is***(***)); // Important: Not camelcase -> IsArray instead of isArray
 // true/false
 
 ```
