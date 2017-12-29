@@ -1,12 +1,20 @@
 declare const require: any;
 
-const nodeComponent = require("../build/Release/fv.node");
+const nodeComponent: {
+    Hello: Function,
+    IsPrime: Function,
+    IsNumber: Function,
+    IsArray: Function,
+    IsFunction: Function,
+    IsObject: Function,
+    IsString: Function
+} = require("../build/Release/fv.node");
 
 export default nodeComponent;
-export const Hello = nodeComponent.Hello;
-export const isPrime = nodeComponent.IsPrime;
-export const isNumber = nodeComponent.IsNumber;
-export const isArray = nodeComponent.IsArray;
-export const isFunction = nodeComponent.IsFunction;
-export const isObject = nodeComponent.IsObject;
-export const isString = nodeComponent.IsString;
+export const Hello: Function = nodeComponent.Hello;
+export const isPrime: Function = nodeComponent.IsPrime;
+export const isNumber: Function = nodeComponent.IsNumber;
+export const isArray: Function = nodeComponent.IsArray;
+export const isFunction: Function = nodeComponent.IsFunction;
+export const isObject: Function = nodeComponent.IsObject;
+export const isString: Function = nodeComponent.IsString;

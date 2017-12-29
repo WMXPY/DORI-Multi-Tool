@@ -9,7 +9,8 @@
         "outDir": "./dist",
         "strict": true,
         "strictNullChecks": false,
-        "noImplicitAny": false
+        "noImplicitAny": false,
+        "declaration": true
     },
     "types": [
         "node"
