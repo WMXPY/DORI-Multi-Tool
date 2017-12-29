@@ -1,9 +1,9 @@
-fasterV: gypRebuild example
+fasterV: gypRebuild examples
 
 gypRebuild:
 	node-gyp rebuild
 
-example:
+examples:
 	node example/main.js
 
 install:

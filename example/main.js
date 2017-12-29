@@ -1,6 +1,6 @@
 const {
     Hello,
-    IsPrime,
+    IsPrimeExample,
     IsNumber,
     IsArray
 } = require("../build/Release/fv.node"); // native c++

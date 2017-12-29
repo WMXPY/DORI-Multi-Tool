@@ -13,22 +13,12 @@ describe('isPrime testing', () => {
         expect(result).to.be.equal(true);
     });
 
-    it('3 should be a prime number', () => {
-        let result: boolean = isPrime(3);
-        expect(result).to.be.equal(true);
-    });
-
-    it('227 should be a prime number', () => {
-        let result: boolean = isPrime(227);
-        expect(result).to.be.equal(true);
-    });
-
     it('1217 should be a prime number', () => {
         let result: boolean = isPrime(1217);
         expect(result).to.be.equal(true);
     });
 
-    it('3607 should not be a prime number', () => {
+    it('3627 should not be a prime number', () => {
         let result: boolean = isPrime(3627);
         expect(result).to.be.equal(false);
     });

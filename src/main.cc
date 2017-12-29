@@ -14,6 +14,7 @@ NAN_MODULE_INIT(Initialize)
     NAN_EXPORT(target, Hello);
     // From verifys.cc
     NAN_EXPORT(target, IsPrime);
+    NAN_EXPORT(target, IsPrimeExample);
     NAN_EXPORT(target, IsArray);
     NAN_EXPORT(target, IsNumber);
     NAN_EXPORT(target, IsFunction);

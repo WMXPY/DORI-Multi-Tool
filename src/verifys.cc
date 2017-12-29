@@ -1,5 +1,6 @@
 #include <nan.h>
 #include <node.h>
+#include <cmath>
 
 NAN_METHOD(IsArray)
 {
@@ -16,6 +17,48 @@ NAN_METHOD(IsArray)
 }
 
 NAN_METHOD(IsPrime)
+{
+    if (!info[0]->IsNumber())
+    {
+        Nan::ThrowTypeError("Input shall be a <number>");
+        return;
+    }
+
+    int number = (int)info[0]->NumberValue();
+
+    if (number < 2)
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+    else if (number == 2)
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        float temp = static_cast<float>(number);
+        int mid = static_cast<int>(sqrt(temp));
+        int i;
+        for (i = 3; i <= mid; i += 2)
+        {
+            if (number % i == 0)
+            {
+                break;
+            }
+        }
+        if (i > mid)
+        {
+            info.GetReturnValue().Set(Nan::True());
+            return;
+        }
+    }
+    info.GetReturnValue().Set(Nan::False());
+    return;
+}
+
+NAN_METHOD(IsPrimeExample)
 {
     if (!info[0]->IsNumber())
     {
