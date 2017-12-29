@@ -45,7 +45,21 @@ console.log(Hello());
 
 ```js
 
-import a, {isArray, isPrime, isNumber, isString, isFunction, isObject} from 'faster-verify';
+import a, 
+{
+    isArray,
+    isPrime,
+    isNumber,
+    isString,
+    isFunction,
+    isObject,
+    isBoolean,
+    isDate,
+    isNull,
+    isUndefinded,
+    isRegExp,
+    isNativeError
+} from 'faster-verify';
 
 console.log(is***(***));
 // true/false

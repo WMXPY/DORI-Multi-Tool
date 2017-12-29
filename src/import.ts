@@ -7,7 +7,13 @@ const nodeComponent: {
     IsArray: Function,
     IsFunction: Function,
     IsObject: Function,
-    IsString: Function
+    IsString: Function,
+    IsNativeError: Function,
+    IsRegExp: Function,
+    IsNull: Function,
+    IsBoolean: Function,
+    IsUndefined: Function,
+    IsDate: Function
 } = require("../build/Release/fv.node");
 
 export default nodeComponent;
@@ -18,3 +24,9 @@ export const isArray: Function = nodeComponent.IsArray;
 export const isFunction: Function = nodeComponent.IsFunction;
 export const isObject: Function = nodeComponent.IsObject;
 export const isString: Function = nodeComponent.IsString;
+export const isNativeError: Function = nodeComponent.IsNativeError;
+export const isRegExp: Function = nodeComponent.IsRegExp;
+export const isNull: Function = nodeComponent.IsNull;
+export const isBoolean: Function = nodeComponent.IsBoolean;
+export const isUndefined: Function = nodeComponent.IsUndefined;
+export const isDate: Function = nodeComponent.IsDate;
