@@ -1,6 +1,6 @@
 # faster-verify
 
-> Now 15% test covered
+> Now 35% test covered
 
 :white_check_mark: A sample type check package for NodeJS, fast, native
 

@@ -144,3 +144,88 @@ NAN_METHOD(IsObject)
         return;
     }
 }
+
+NAN_METHOD(IsDate)
+{
+    if (info[0]->IsDate())
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+}
+
+NAN_METHOD(IsBoolean)
+{
+    if (info[0]->IsBoolean())
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+}
+
+NAN_METHOD(IsNativeError)
+{
+    if (info[0]->IsNativeError())
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+}
+
+NAN_METHOD(IsRegExp)
+{
+    if (info[0]->IsRegExp())
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+}
+
+NAN_METHOD(IsNull)
+{
+    if (info[0]->IsNull())
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+}
+
+NAN_METHOD(IsUndefined)
+{
+    if (info[0]->IsUndefined())
+    {
+        info.GetReturnValue().Set(Nan::True());
+        return;
+    }
+    else
+    {
+        info.GetReturnValue().Set(Nan::False());
+        return;
+    }
+}
+
