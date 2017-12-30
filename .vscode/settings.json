@@ -2,6 +2,7 @@
     "files.associations": {
         "*.vue": "html",
         "system_error": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "xiosbase": "cpp"
     }
 }
