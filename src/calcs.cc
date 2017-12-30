@@ -4,6 +4,12 @@
 
 using namespace v8;
 
+struct graphPoint
+{
+    int x;
+    int y;
+};
+
 void ArrStatic(const Nan::FunctionCallbackInfo<Value> &info)
 {
     Isolate *isolate = info.GetIsolate();
@@ -28,4 +34,12 @@ void ArrStatic(const Nan::FunctionCallbackInfo<Value> &info)
 
     info.GetReturnValue().Set(obj);
     return;
+}
+
+void ColorParser(const Nan::FunctionCallbackInfo<Value> &info)
+{
+}
+
+graphPoint bezier()
+{
 }
