@@ -63,8 +63,9 @@ console.log(a.IsArray(***), a.Is***(***)); // Important: Not camelcase -> IsArra
 
 ## Performance
 
-> Important: Sometimes native is slower then js way due to v8 optimize ->
-> Important: Please do branch mark testing before deploy.
+> Important: Sometimes native is slower then js way due to v8 optimize
+>
+> Please do benchmark testing before deploy.
 
 ```bash
 c++: checking 857692584 is a prime number
