@@ -3,6 +3,9 @@
         "*.vue": "html",
         "system_error": "cpp",
         "cmath": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "istream": "cpp",
+        "type_traits": "cpp",
+        "xlocnum": "cpp"
     }
 }

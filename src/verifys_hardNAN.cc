@@ -2,9 +2,7 @@
 #include <node.h>
 #include <cmath>
 
-using namespace v8;
-
-void IsArray(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsArray)
 {
     if (info[0]->IsArray())
     {
@@ -18,7 +16,7 @@ void IsArray(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsPrime(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsPrime)
 {
     if (!info[0]->IsNumber())
     {
@@ -60,7 +58,7 @@ void IsPrime(const Nan::FunctionCallbackInfo<Value> &info)
     return;
 }
 
-void IsPrimeExample(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsPrimeExample)
 {
     if (!info[0]->IsNumber())
     {
@@ -91,7 +89,7 @@ void IsPrimeExample(const Nan::FunctionCallbackInfo<Value> &info)
     return;
 }
 
-void IsNumber(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsNumber)
 {
     if (info[0]->IsNumber())
     {
@@ -105,7 +103,7 @@ void IsNumber(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsFunction(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsFunction)
 {
     if (info[0]->IsFunction())
     {
@@ -119,7 +117,7 @@ void IsFunction(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsString(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsString)
 {
     if (info[0]->IsString())
     {
@@ -133,7 +131,7 @@ void IsString(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsObject(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsObject)
 {
     if (info[0]->IsObject())
     {
@@ -147,7 +145,7 @@ void IsObject(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsDate(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsDate)
 {
     if (info[0]->IsDate())
     {
@@ -161,7 +159,7 @@ void IsDate(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsBoolean(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsBoolean)
 {
     if (info[0]->IsBoolean())
     {
@@ -175,7 +173,7 @@ void IsBoolean(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsNativeError(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsNativeError)
 {
     if (info[0]->IsNativeError())
     {
@@ -189,7 +187,7 @@ void IsNativeError(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsRegExp(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsRegExp)
 {
     if (info[0]->IsRegExp())
     {
@@ -203,7 +201,7 @@ void IsRegExp(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsNull(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsNull)
 {
     if (info[0]->IsNull())
     {
@@ -217,7 +215,7 @@ void IsNull(const Nan::FunctionCallbackInfo<Value> &info)
     }
 }
 
-void IsUndefined(const Nan::FunctionCallbackInfo<Value> &info)
+NAN_METHOD(IsUndefined)
 {
     if (info[0]->IsUndefined())
     {
