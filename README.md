@@ -8,9 +8,9 @@
 
 ```bash
 
-npm install faster-verify --save
+npm install dorimt --save
 # Or
-npm install faster-verify --save-dev
+npm install dorimt --save-dev
 
 ```
 
@@ -21,7 +21,7 @@ If error occurs, you can run it again by your self.
 ```bash
 
 # Goto the folder
-cd node_modules/faster-verify
+cd node_modules/dorimt
 make compile
 # Or
 npm run compile
@@ -34,7 +34,7 @@ npm run compile
 
 ```js
 
-import {Hello} from 'faster-verify';
+import {Hello} from 'dorimt';
 
 console.log(Hello());
 // Hello from C++!
@@ -60,7 +60,7 @@ import a,
     isRegExp,
     isNativeError,
     arrStatic
-} from 'faster-verify';
+} from 'dorimt';
 
 console.log(is***(***));
 // true/false
