@@ -1,8 +1,8 @@
-# faster-verify
+# DORI Multi Tool
 
 > Now 35% test covered
 
-:white_check_mark: A sample type check package for NodeJS, fast, native
+:white_check_mark: A sample util tool package for NodeJS, fast, native
 
 ## Install
 
