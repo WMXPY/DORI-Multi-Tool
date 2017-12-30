@@ -58,7 +58,8 @@ import a,
     isNull,
     isUndefinded,
     isRegExp,
-    isNativeError
+    isNativeError,
+    arrStatic
 } from 'faster-verify';
 
 console.log(is***(***));
@@ -72,10 +73,10 @@ console.log(a.IsArray(***), a.Is***(***)); // Important: Not camelcase -> IsArra
 
 ```bash
 
-c++: checking 654188429 is a prime number
+c++: checking 857692584 is a prime number
 true
 native: 1273.028ms
-js: checking 654188429 is a prime number
+js: checking 857692584 is a prime number
 true
 js: 2143.402ms
 

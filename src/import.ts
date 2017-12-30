@@ -32,4 +32,4 @@ export const isNull: Function = nodeComponent.IsNull;
 export const isBoolean: Function = nodeComponent.IsBoolean;
 export const isUndefined: Function = nodeComponent.IsUndefined;
 export const isDate: Function = nodeComponent.IsDate;
-export const ArrStatic: Function = nodeComponent.ArrStatic;
+export const arrStatic: Function = nodeComponent.ArrStatic;
