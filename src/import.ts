@@ -13,10 +13,12 @@ const nodeComponent: {
     IsNull: Function,
     IsBoolean: Function,
     IsUndefined: Function,
-    IsDate: Function
+    IsDate: Function,
+    ArrStatic: Function
 } = require("../build/Release/fv.node");
 
 export default nodeComponent;
+
 export const Hello: Function = nodeComponent.Hello;
 export const isPrime: Function = nodeComponent.IsPrime;
 export const isNumber: Function = nodeComponent.IsNumber;
@@ -30,3 +32,4 @@ export const isNull: Function = nodeComponent.IsNull;
 export const isBoolean: Function = nodeComponent.IsBoolean;
 export const isUndefined: Function = nodeComponent.IsUndefined;
 export const isDate: Function = nodeComponent.IsDate;
+export const ArrStatic: Function = nodeComponent.ArrStatic;

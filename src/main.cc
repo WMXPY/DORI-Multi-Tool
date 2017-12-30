@@ -1,8 +1,10 @@
 #include <node.h>
 #include <v8.h>
 #include <nan.h>
+#include <stdlib.h>
 
 #include "verifys.cc"
+#include "calcs.cc"
 
 using namespace v8;
 
@@ -63,6 +65,8 @@ void Init(Local<Object> exports)
     exports->Set(Nan::New("IsRegExp").ToLocalChecked(), Nan::New<FunctionTemplate>(IsRegExp)->GetFunction());
     exports->Set(Nan::New("IsNull").ToLocalChecked(), Nan::New<FunctionTemplate>(IsNull)->GetFunction());
     exports->Set(Nan::New("IsUndefined").ToLocalChecked(), Nan::New<FunctionTemplate>(IsUndefined)->GetFunction());
+    // From calc.cc
+    exports->Set(Nan::New("ArrStatic").ToLocalChecked(), Nan::New<FunctionTemplate>(ArrStatic)->GetFunction());
 }
 
 /**

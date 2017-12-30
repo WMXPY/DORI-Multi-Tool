@@ -6,6 +6,9 @@
         "xiosbase": "cpp",
         "istream": "cpp",
         "type_traits": "cpp",
-        "xlocnum": "cpp"
+        "xlocnum": "cpp",
+        "xlocale": "cpp",
+        "iosfwd": "cpp",
+        "xstring": "cpp"
     }
 }
