@@ -4,12 +4,6 @@
 
 using namespace v8;
 
-struct graphPoint
-{
-    int x;
-    int y;
-};
-
 void ArrStatic(const Nan::FunctionCallbackInfo<Value> &info)
 {
     Isolate *isolate = info.GetIsolate();
@@ -36,10 +30,6 @@ void ArrStatic(const Nan::FunctionCallbackInfo<Value> &info)
     return;
 }
 
-void ColorParser(const Nan::FunctionCallbackInfo<Value> &info)
-{
-}
-
-graphPoint bezier()
+void Bezier(const Nan::FunctionCallbackInfo<Value> &info)
 {
 }
