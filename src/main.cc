@@ -100,4 +100,4 @@ void Init(Local<Object> exports)
 /**
  * With NAN
  */
-NODE_MODULE(fv, Init);
+NODE_MODULE(dorimt, Init);

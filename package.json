@@ -1,7 +1,7 @@
 {
   "name": "dorimt",
   "version": "0.2.2",
-  "description": "Faster verify",
+  "description": ":white_check_mark: A sample util tool package for NodeJS, fast, native",
   "main": "dist/import.js",
   "scripts": {
     "postinstall": "node-gyp rebuild",

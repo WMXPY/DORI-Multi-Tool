@@ -1,4 +1,4 @@
-fasterV: gypRebuild examples
+dorimt: gypRebuild examples
 
 gypRebuild:
 	node-gyp rebuild

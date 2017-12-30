@@ -2,7 +2,7 @@ const {
     ArrStatic,
     IsNumber,
     IsArray
-} = require("../build/Release/fv.node"); // native c++
+} = require("../build/Release/dorimt.node"); // native c++
 const isPrime = require('./isPrime.js'); // js
 
 

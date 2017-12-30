@@ -15,7 +15,7 @@ const nodeComponent: {
     IsUndefined: Function,
     IsDate: Function,
     ArrStatic: Function
-} = require("../build/Release/fv.node");
+} = require("../build/Release/dorimt.node");
 
 export default nodeComponent;
 
