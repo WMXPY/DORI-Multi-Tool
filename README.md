@@ -79,6 +79,7 @@ console.log(a.LeastSquares([4, 2, 8])); // Important: Not camelcase -> LeastSqua
 ## Performance
 
 > Important: Sometimes native is slower then js way due to v8 optimize  
+> For example -> script have better performance to verify many example of `undefined` is undefined or not  
 > Please do benchmark testing before deploy.
 
 ```bash
