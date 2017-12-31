@@ -61,10 +61,24 @@ console.log(a.IsArray(***), a.Is***(***)); // Important: Not camelcase -> IsArra
 // true/false
 ```
 
+### Calculation
+
+#### Trendline
+
+```js
+import a, 
+{
+    leastSquares
+} from 'dorimt';
+console.log(leastSquares([4, 2, 8]));
+// return { a: 2, b: 0.6666666666666666 } that y=2x+0.666666
+console.log(a.LeastSquares([4, 2, 8])); // Important: Not camelcase -> LeastSquares instead of leastSquares
+// return { a: 2, b: 0.6666666666666666 } that y=2x+0.666666
+```
+
 ## Performance
 
-> Important: Sometimes native is slower then js way due to v8 optimize
->
+> Important: Sometimes native is slower then js way due to v8 optimize  
 > Please do benchmark testing before deploy.
 
 ```bash

@@ -29,6 +29,7 @@ void Init(Local<Object> exports)
     // From calc.cc
     exports->Set(Nan::New("ArrStatic").ToLocalChecked(), Nan::New<FunctionTemplate>(ArrStatic)->GetFunction());
     exports->Set(Nan::New("Bezier").ToLocalChecked(), Nan::New<FunctionTemplate>(Bezier)->GetFunction());
+    exports->Set(Nan::New("LeastSquares").ToLocalChecked(), Nan::New<FunctionTemplate>(LeastSquares)->GetFunction());
 }
 
 NODE_MODULE(dorimt, Init);

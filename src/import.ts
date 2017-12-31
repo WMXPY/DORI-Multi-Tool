@@ -1,20 +1,27 @@
 declare const require: any;
 
 const nodeComponent: {
-    Hello: Function,
-    IsPrime: Function,
-    IsNumber: Function,
-    IsArray: Function,
-    IsFunction: Function,
-    IsObject: Function,
-    IsString: Function,
-    IsNativeError: Function,
-    IsRegExp: Function,
-    IsNull: Function,
-    IsBoolean: Function,
-    IsUndefined: Function,
-    IsDate: Function,
-    ArrStatic: Function
+    Hello(): string,
+    IsPrime(target: number): boolean,
+    IsNumber(target: any): boolean,
+    IsArray(target: any): boolean,
+    IsFunction(target: any): boolean,
+    IsObject(target: any): boolean,
+    IsString(target: any): boolean,
+    IsNativeError(target: any): boolean,
+    IsRegExp(target: any): boolean,
+    IsNull(target: any): boolean,
+    IsBoolean(target: any): boolean,
+    IsUndefined(target: any): boolean,
+    IsDate(target: any): boolean,
+    ArrStatic(target: Array<number>): {
+        average: number
+    },
+    // Use a and b in y=ax+b trendline
+    LeastSquares(target: Array<number>): {
+        a: number,
+        b: number
+    }
 } = require("../build/Release/dorimt.node");
 
 export default nodeComponent;
@@ -33,3 +40,4 @@ export const isBoolean: Function = nodeComponent.IsBoolean;
 export const isUndefined: Function = nodeComponent.IsUndefined;
 export const isDate: Function = nodeComponent.IsDate;
 export const arrStatic: Function = nodeComponent.ArrStatic;
+export const leastSquares: Function = nodeComponent.LeastSquares;
