@@ -24,6 +24,11 @@ make compile
 npm run compile
 ```
 
+## Documents
+
+[API](http://www.google.com/)
+[What about?](http://www.google.com/)
+
 ## Basic usage
 
 ### Test compile
@@ -60,7 +65,7 @@ console.log(is***(***));
 console.log(a.IsArray(***), a.Is***(***)); // Important: Not camelcase -> IsArray instead of isArray
 // true/false
 ```
-
+ 
 ### Calculation
 
 #### Trendline
