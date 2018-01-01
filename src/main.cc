@@ -6,12 +6,15 @@
 #include "verifys.cc"
 #include "calcs.cc"
 #include "hello.cc"
+// #include "md5.cc"
+#include "md5.h"
 
 using namespace v8;
 
 void Init(Local<Object> exports)
 {
     exports->Set(Nan::New("Hello").ToLocalChecked(), Nan::New<FunctionTemplate>(Hello)->GetFunction());
+    exports->Set(Nan::New("DDD").ToLocalChecked(), Nan::New<FunctionTemplate>(DDD)->GetFunction());
     // From verifys.cc
     exports->Set(Nan::New("IsPrime").ToLocalChecked(), Nan::New<FunctionTemplate>(IsPrime)->GetFunction());
     exports->Set(Nan::New("IsPrimeExample").ToLocalChecked(), Nan::New<FunctionTemplate>(IsPrimeExample)->GetFunction());

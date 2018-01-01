@@ -1,8 +1,9 @@
 const {
     LeastSquares,
     IsNumber,
-    IsArray
+    IsArray,
+    DDD
 } = require("../build/Release/dorimt.node"); // native c++
 const isPrime = require('./isPrime.js'); // js
 
-console.log(LeastSquares([4, 2, 8]))
+console.log(DDD([4, 2, 8]))
