@@ -26,8 +26,8 @@ npm run compile
 
 ## Documents
 
-[API](http://www.google.com/)
-[What about?](http://www.google.com/)
+[API](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/api.md)
+[What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/what.md)
 
 ## Basic usage
 
