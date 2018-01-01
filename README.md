@@ -26,8 +26,9 @@ npm run compile
 
 ## Documents
 
-[API](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/api.md)
-[What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/what.md)
+Check out [API](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/api.md) of DORI multi tool
+
+[What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/what.md) DORI multi tool
 
 ## Basic usage
 
