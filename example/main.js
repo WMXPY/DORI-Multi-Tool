@@ -7,5 +7,5 @@ const {
 const isPrime = require('./isPrime.js'); // js
 
 console.time("native");
-console.log(MD5("2133333333"));
+console.log(MD5("test"));
 console.timeEnd("native");

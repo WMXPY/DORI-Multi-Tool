@@ -26,7 +26,12 @@ npm run compile
 
 ## Documents
 
-Check out [API](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/api.md) of DORI multi tool
+Check out [API and way to import](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/api.md) of DORI multi tool
+
+Also:
+
+- [API about verify functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/verifysAPI.md)
+- [API about calculation functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/calcAPI.md)
 
 [What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/what.md) DORI multi tool
 
@@ -46,28 +51,27 @@ console.log(Hello());
 ```js
 import a, 
 {
-    isArray,
-    isPrime,
-    isNumber,
-    isString,
-    isFunction,
-    isObject,
-    isBoolean,
-    isDate,
-    isNull,
-    isUndefinded,
-    isRegExp,
-    isNativeError,
-    arrStatic
+    is***blablabla
 } from 'dorimt';
 
 console.log(is***(***));
 // true/false
 console.log(a.IsArray(***), a.Is***(***)); // Important: Not camelcase -> IsArray instead of isArray
-// true/false
 ```
  
 ### Calculation
+
+#### MD5
+
+```js
+import a, 
+{
+    MD5
+} from 'dorimt';
+console.log(MD5("test"));
+// return 098f6bcd4621d373cade4e832627b4f6
+console.log(a.md5("test"));
+```
 
 #### Trendline
 
@@ -79,7 +83,6 @@ import a,
 console.log(leastSquares([4, 2, 8]));
 // return { a: 2, b: 0.6666666666666666 } that y=2x+0.666666
 console.log(a.LeastSquares([4, 2, 8])); // Important: Not camelcase -> LeastSquares instead of leastSquares
-// return { a: 2, b: 0.6666666666666666 } that y=2x+0.666666
 ```
 
 ## Performance
