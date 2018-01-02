@@ -1,6 +1,6 @@
 # DORI Multi Tool
 
-> Now 40% test covered
+> Now 30% test covered
 
 :white_check_mark: A sample util tool package for NodeJS, fast, native
 

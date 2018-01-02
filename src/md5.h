@@ -4,6 +4,10 @@
 #include <node.h>
 #include <v8.h>
 #include <nan.h>
+#include <memory.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <fstream>
 
 using namespace v8;
 
@@ -75,6 +79,7 @@ typedef struct
     \
 }
 
+const char *ToCString(const String::Utf8Value &value);
 void MD5Update(MD5_CTX *context, unsigned char *input, unsigned int inputlen);
 void MD5Final(MD5_CTX *context, unsigned char digest[16]);
 void MD5Transform(unsigned int state[4], unsigned char block[64]);

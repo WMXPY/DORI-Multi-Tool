@@ -6,4 +6,6 @@ const {
 } = require("../build/Release/dorimt.node"); // native c++
 const isPrime = require('./isPrime.js'); // js
 
-console.log(MD5([4, 2, 8]))
+console.time("native");
+console.log(MD5("2133333333"));
+console.timeEnd("native");

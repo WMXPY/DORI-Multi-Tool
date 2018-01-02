@@ -1,16 +1,20 @@
 #include "md5.h"
-#include <memory.h>
 
 void MD5(const Nan::FunctionCallbackInfo<Value> &info)
 {
     char md5_str[MD5_STR_LEN + 1];
 
-    unsigned int i;
     unsigned char md5_value[MD5_SIZE];
     MD5_CTX md5;
 
-    char *dest_str = "test";
-    int dest_len = 4;
+    Isolate *isolate = info.GetIsolate();
+
+    // Local<Function> cb = Local<Function>::Cast(args[1]);
+    // cb->Call(isolate->GetCurrentContext()->Global(), argc, argv);
+
+    String::Utf8Value str(info[0]);
+    const char *dest_str = ToCString(str);
+    int dest_len = strlen(dest_str);
 
     md5.count[0] = 0;
     md5.count[1] = 0;
@@ -22,6 +26,7 @@ void MD5(const Nan::FunctionCallbackInfo<Value> &info)
     MD5Update(&md5, (unsigned char *)dest_str, dest_len);
     MD5Final(&md5, md5_value);
 
+    unsigned int i;
     for (i = 0; i < MD5_SIZE; i++)
     {
         snprintf(md5_str + i * 2, 2 + 1, "%02x", md5_value[i]);
@@ -38,6 +43,11 @@ unsigned char PADDING[] =
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+const char *ToCString(const String::Utf8Value &value)
+{
+    return *value ? *value : "<string conversion failed>";
+}
 
 void MD5Update(MD5_CTX *context, unsigned char *input, unsigned int inputlen)
 {
