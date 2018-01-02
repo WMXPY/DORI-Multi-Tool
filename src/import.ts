@@ -21,7 +21,8 @@ const nodeComponent: {
     LeastSquares(target: Array<number>): {
         a: number,
         b: number
-    }
+    },
+    MD5(content: string): string
 } = require("../build/Release/dorimt.node");
 
 export default nodeComponent;
@@ -41,3 +42,4 @@ export const isUndefined: Function = nodeComponent.IsUndefined;
 export const isDate: Function = nodeComponent.IsDate;
 export const arrStatic: Function = nodeComponent.ArrStatic;
 export const leastSquares: Function = nodeComponent.LeastSquares;
+export const md5: Function = nodeComponent.MD5;

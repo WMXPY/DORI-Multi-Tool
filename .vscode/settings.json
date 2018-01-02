@@ -9,6 +9,8 @@
         "xlocnum": "cpp",
         "xlocale": "cpp",
         "iosfwd": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "cstring": "cpp",
+        "xtr1common": "cpp"
     }
 }
