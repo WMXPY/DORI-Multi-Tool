@@ -99,6 +99,10 @@ void BayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
             Nan::ThrowTypeError("Every change media must between 0 and 2");
             return;
         }
+        else if (result == 0)
+        {
+            break;
+        }
         double changeMedia = LC->Get(i)->NumberValue();
         result *= changeMedia;
     }
@@ -115,6 +119,42 @@ void BayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
  */
 void DoubleBayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
 {
+    Isolate *isolate = info.GetIsolate();
+    if (!info[0]->IsNumber())
+    {
+        Nan::ThrowTypeError("Input 0 shall be a <number>");
+        return;
+    }
+    if (!info[1]->IsArray())
+    {
+        Nan::ThrowTypeError("Input 1 shall be a <array>");
+        return;
+    }
+
+    Local<Array> LC = Local<Array>::Cast(info[1]);
+    double IL = (double)info[0]->NumberValue();
+    double result = IL;
+    const unsigned int length = LC->Length();
+    unsigned int i;
+
+    for (i = 0; i < length; i++)
+    {
+        if (LC->Get(i)->NumberValue() < 0 || LC->Get(i)->NumberValue() > 2)
+        {
+            Nan::ThrowTypeError("Every change media must between 0 and 2");
+            return;
+        }
+        else if (result == 0)
+        {
+            break;
+        }
+        double changeMedia = LC->Get(i)->NumberValue();
+        result *= changeMedia;
+    }
+
+    auto message = Nan::New(result);
+    info.GetReturnValue().Set(message);
+    return;
 }
 
 void Bezier(const Nan::FunctionCallbackInfo<Value> &info)
