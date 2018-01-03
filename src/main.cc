@@ -13,6 +13,7 @@ using namespace v8;
 void Init(Local<Object> exports)
 {
     exports->Set(Nan::New("Hello").ToLocalChecked(), Nan::New<FunctionTemplate>(Hello)->GetFunction());
+    exports->Set(Nan::New("World").ToLocalChecked(), Nan::New<FunctionTemplate>(World)->GetFunction());
     // From verifys.cc
     exports->Set(Nan::New("IsPrime").ToLocalChecked(), Nan::New<FunctionTemplate>(IsPrime)->GetFunction());
     exports->Set(Nan::New("IsPrimeExample").ToLocalChecked(), Nan::New<FunctionTemplate>(IsPrimeExample)->GetFunction());
