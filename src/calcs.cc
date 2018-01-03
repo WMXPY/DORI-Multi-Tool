@@ -67,6 +67,24 @@ void LeastSquares(const Nan::FunctionCallbackInfo<Value> &info)
     return;
 }
 
+/**
+ * Bayes' theorem
+ * Input: Basic possibility / Array of ints
+ * Output: y=ax+b trand line that a and b
+ */
+void BayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
+{
+}
+
+/**
+ * Double Bayes' theorem
+ * Input: Basic possibility / Array of ints
+ * Output: y=ax+b trand line that a and b
+ */
+void DoubleBayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
+{
+}
+
 void Bezier(const Nan::FunctionCallbackInfo<Value> &info)
 {
 }
