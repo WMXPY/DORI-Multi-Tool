@@ -1,11 +1,6 @@
 const {
-    LeastSquares,
-    IsNumber,
-    IsArray,
-    MD5
+    BayesTheorem
 } = require("../build/Release/dorimt.node"); // native c++
 const isPrime = require('./isPrime.js'); // js
 
-console.time("native");
-console.log(MD5("test"));
-console.timeEnd("native");
+console.log(BayesTheorem(0.2, [1.2, 0.8, 1.1, 0.1, 2]));

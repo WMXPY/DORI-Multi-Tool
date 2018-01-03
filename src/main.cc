@@ -31,6 +31,8 @@ void Init(Local<Object> exports)
     exports->Set(Nan::New("ArrStatic").ToLocalChecked(), Nan::New<FunctionTemplate>(ArrStatic)->GetFunction());
     exports->Set(Nan::New("Bezier").ToLocalChecked(), Nan::New<FunctionTemplate>(Bezier)->GetFunction());
     exports->Set(Nan::New("LeastSquares").ToLocalChecked(), Nan::New<FunctionTemplate>(LeastSquares)->GetFunction());
+    exports->Set(Nan::New("BayesTheorem").ToLocalChecked(), Nan::New<FunctionTemplate>(BayesTheorem)->GetFunction());
+    exports->Set(Nan::New("DoubleBayesTheorem").ToLocalChecked(), Nan::New<FunctionTemplate>(DoubleBayesTheorem)->GetFunction());
     // From md5.cc
     exports->Set(Nan::New("MD5").ToLocalChecked(), Nan::New<FunctionTemplate>(MD5)->GetFunction());
 }

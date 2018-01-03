@@ -41,8 +41,8 @@ void IsPrime(const Nan::FunctionCallbackInfo<Value> &info)
     else
     {
         float temp = static_cast<float>(number);
-        int mid = static_cast<int>(sqrt(temp));
-        int i;
+        unsigned int mid = static_cast<int>(sqrt(temp));
+        unsigned int i;
         for (i = 3; i <= mid; i += 2)
         {
             if (number % i == 0)
