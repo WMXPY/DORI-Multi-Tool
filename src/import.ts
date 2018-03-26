@@ -22,7 +22,8 @@ const nodeComponent: {
         a: number,
         b: number
     },
-    MD5(content: string): string
+    MD5(content: string): string,
+    Similar(content: string, list: string[]): string[],
 } = require("../build/Release/dorimt.node");
 
 export default nodeComponent;
@@ -43,3 +44,4 @@ export const isDate: Function = nodeComponent.IsDate;
 export const arrStatic: Function = nodeComponent.ArrStatic;
 export const leastSquares: Function = nodeComponent.LeastSquares;
 export const md5: Function = nodeComponent.MD5;
+export const similar: Function = nodeComponent.Similar;

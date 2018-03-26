@@ -6,6 +6,7 @@
 #include "verifys.cc"
 #include "calcs.cc"
 #include "hello.cc"
+#include "smart.cc"
 #include "md5.h"
 
 using namespace v8;
@@ -36,6 +37,8 @@ void Init(Local<Object> exports)
     exports->Set(Nan::New("DoubleBayesTheorem").ToLocalChecked(), Nan::New<FunctionTemplate>(DoubleBayesTheorem)->GetFunction());
     // From md5.cc
     exports->Set(Nan::New("MD5").ToLocalChecked(), Nan::New<FunctionTemplate>(MD5)->GetFunction());
+    // From smart.cc
+    exports->Set(Nan::New("Similar").ToLocalChecked(), Nan::New<FunctionTemplate>(Similar)->GetFunction());
 }
 
 NODE_MODULE(dorimt, Init);
