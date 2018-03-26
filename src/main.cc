@@ -6,6 +6,7 @@
 #include "calc/cla.h"
 #include "hello/hello.h"
 #include "smart/smart.h"
+#include "learning/learning.h"
 
 using namespace v8;
 
