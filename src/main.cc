@@ -3,11 +3,9 @@
 #include <nan.h>
 #include <stdlib.h>
 
-#include "verifys.cc"
-#include "calcs.cc"
-#include "hello.cc"
-#include "smart.cc"
-#include "md5.h"
+#include "calc/cla.h"
+#include "hello/hello.h"
+#include "smart/smart.h"
 
 using namespace v8;
 

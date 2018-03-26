@@ -2,6 +2,7 @@ build
 example
 node_modules
 src/import.ts
+deprecated
 .gitignore
 makefile
 package-lock.json
