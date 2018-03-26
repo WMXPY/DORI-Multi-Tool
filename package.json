@@ -1,6 +1,6 @@
 {
   "name": "dorimt",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": ":white_check_mark: A sample util tool package for NodeJS, fast, native",
   "main": "dist/import.js",
   "scripts": {
