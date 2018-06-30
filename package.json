@@ -1,6 +1,6 @@
 {
   "name": "dorimt",
-  "version": "0.2.6",
+  "version": "1.0.0",
   "description": ":white_check_mark: A sample util tool package for NodeJS, fast, native",
   "main": "dist/import.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/WMXPY/faster-verify.git"
   },
   "author": "WMXPY",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/WMXPY/faster-verify/issues"
   },
