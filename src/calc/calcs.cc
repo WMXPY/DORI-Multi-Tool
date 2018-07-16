@@ -30,10 +30,34 @@ void ArrStatic(const Nan::FunctionCallbackInfo<Value> &info)
     return;
 }
 
+void ForEach(const Nan::FunctionCallbackInfo<Value> &info)
+{
+    Isolate *isolate = info.GetIsolate();
+
+    Local<Array> input = Local<Array>::Cast(info[0]);
+    Local<Function> eachFunc = Local<Function>::Cast(info[1]);
+
+    const unsigned int length = input->Length();
+    Local<Object> obj = Object::New(isolate);
+
+    unsigned int i;
+
+    for (i = 0; i < length; i++)
+    {
+        const unsigned argc = 1;
+        Local<Value> argv[argc] = {input->Get(i)};
+        eachFunc->Call(isolate->GetCurrentContext()->Global(), argc, argv);
+    }
+
+    auto undefined = Nan::Undefined();
+    info.GetReturnValue().Set(undefined);
+    return;
+}
+
 /**
  * LeastSquares
- * Input: Array of ints
- * Output: y=ax+b trand line that a and b
+ * @arguments Array of ints
+ * @return y=ax+b trend line that a and b
  */
 void LeastSquares(const Nan::FunctionCallbackInfo<Value> &info)
 {
@@ -69,8 +93,8 @@ void LeastSquares(const Nan::FunctionCallbackInfo<Value> &info)
 
 /**
  * Bayes' theorem
- * Input: Basic possibility / Array of ints
- * Output: y=ax+b trand line that a and b
+ * @arguments Basic possibility / Array of ints
+ * @return y=ax+b trend line that a and b
  */
 void BayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
 {
@@ -114,8 +138,8 @@ void BayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
 
 /**
  * Double Bayes' theorem
- * Input: Basic possibility / Array of ints
- * Output: y=ax+b trand line that a and b
+ * @arguments Basic possibility / Array of ints
+ * @return y=ax+b trend line that a and b
  */
 void DoubleBayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
 {

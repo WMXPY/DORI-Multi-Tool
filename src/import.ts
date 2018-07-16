@@ -1,7 +1,11 @@
 declare const require: any;
 
 const nodeComponent: {
+
+    // Hello
     Hello(): string,
+
+    // Verifys
     IsPrime(target: number): boolean,
     IsNumber(target: any): boolean,
     IsArray(target: any): boolean,
@@ -14,10 +18,13 @@ const nodeComponent: {
     IsBoolean(target: any): boolean,
     IsUndefined(target: any): boolean,
     IsDate(target: any): boolean,
+
+    // Calcs
+    ForEach<T>(target: Array<T>, func: (element: T) => void): void;
     ArrStatic(target: Array<number>): {
         average: number
     },
-    // Use a and b in y=ax+b trendline
+    // Use a and b in y=ax+b trend line
     LeastSquares(target: Array<number>): {
         a: number,
         b: number
@@ -28,7 +35,10 @@ const nodeComponent: {
 
 export default nodeComponent;
 
+// Hello
 export const Hello: Function = nodeComponent.Hello;
+
+// Verify
 export const isPrime: Function = nodeComponent.IsPrime;
 export const isNumber: Function = nodeComponent.IsNumber;
 export const isArray: Function = nodeComponent.IsArray;
@@ -41,6 +51,9 @@ export const isNull: Function = nodeComponent.IsNull;
 export const isBoolean: Function = nodeComponent.IsBoolean;
 export const isUndefined: Function = nodeComponent.IsUndefined;
 export const isDate: Function = nodeComponent.IsDate;
+
+// Calcs
+export const forEach: Function = nodeComponent.ForEach;
 export const arrStatic: Function = nodeComponent.ArrStatic;
 export const leastSquares: Function = nodeComponent.LeastSquares;
 export const md5: Function = nodeComponent.MD5;

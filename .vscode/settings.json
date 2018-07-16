@@ -12,5 +12,10 @@
         "xstring": "cpp",
         "cstring": "cpp",
         "xtr1common": "cpp"
-    }
+    },
+    "cSpell.words": [
+        "Bezier",
+        "dorimt",
+        "verifys"
+    ]
 }
