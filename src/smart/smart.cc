@@ -1,7 +1,3 @@
-#include <nan.h>
-#include <node.h>
-#include <string>
-
 using namespace v8;
 
 /**
@@ -9,7 +5,6 @@ using namespace v8;
  */
 void Similar(const Nan::FunctionCallbackInfo<Value> &info)
 {
-
     Isolate *isolate = info.GetIsolate();
 
     Local<String> source = Local<String>::Cast(info[0]);
