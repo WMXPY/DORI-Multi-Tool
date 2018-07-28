@@ -9,9 +9,6 @@ void MD5(const Nan::FunctionCallbackInfo<Value> &info)
 
     Isolate *isolate = info.GetIsolate();
 
-    // Local<Function> cb = Local<Function>::Cast(args[1]);
-    // cb->Call(isolate->GetCurrentContext()->Global(), argc, argv);
-
     String::Utf8Value str(info[0]);
     const char *dest_str = ToCString(str);
     int dest_len = strlen(dest_str);

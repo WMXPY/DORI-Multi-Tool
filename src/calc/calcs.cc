@@ -183,4 +183,12 @@ void DoubleBayesTheorem(const Nan::FunctionCallbackInfo<Value> &info)
 
 void Bezier(const Nan::FunctionCallbackInfo<Value> &info)
 {
+    Isolate *isolate = info.GetIsolate();
+
+    Local<String> source = Local<String>::Cast(info[0]);
+    Local<String> target = Local<String>::Cast(info[1]);
+
+    auto message = Nan::New("Bezier").ToLocalChecked();
+    info.GetReturnValue().Set(message);
+    return;
 }
