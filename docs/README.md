@@ -74,7 +74,7 @@ console.log(MD5("test"));
 console.log(a.md5("test"));
 ```
 
-#### Trendline
+#### Trend line
 
 ```js
 import a, 
