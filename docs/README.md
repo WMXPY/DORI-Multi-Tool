@@ -1,5 +1,8 @@
 # DORI Multi Tool
 
+[![npm version](https://badge.fury.io/js/dorimt.svg)](https://www.npmjs.com/package/dorimt)
+[![downloads](https://img.shields.io/npm/dm/dorimt.svg)](https://www.npmjs.com/package/dorimt)
+
 :white_check_mark: A sample util tool package for NodeJS, fast, native
 
 ## Install
@@ -24,14 +27,14 @@ npm run compile
 
 ## Documents
 
-Check out [API and way to import](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/api.md) of DORI multi tool
+Check out [API and way to import](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/api.md) of DORI multi tool
 
 Also:
 
-- [API about verify functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/verifysAPI.md)
-- [API about calculation functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/calcAPI.md)
+- [API about verify functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/verifysAPI.md)
+- [API about calculation functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/calcAPI.md)
 
-[What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/doc/what.md) DORI multi tool
+[What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/what.md) DORI multi tool
 
 ## Basic usage
 
