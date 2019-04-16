@@ -7,8 +7,12 @@ examples:
 	node example/main.js
 
 install:
-	npm install node-gyp -g
-	npm install --only=dev
+	@echo "[INFO] Installing dev Dependencies"
+	@yarn install --production=false
+
+install-prod:
+	@echo "[INFO] Installing Dependencies"
+	@yarn install --production=true
 
 tests:
 	mocha -r ts-node/register test/**/*.test.ts
