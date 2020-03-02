@@ -34,8 +34,6 @@ Also:
 - [API about verify functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/verifysAPI.md)
 - [API about calculation functions](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/calcAPI.md)
 
-[What about?](https://github.com/WMXPY/DORI-Multi-Tool/blob/master/docs/what.md) DORI multi tool
-
 ## Basic usage
 
 ### Test compile
